@@ -50,6 +50,13 @@
             bindings = <&kp LS(LG(D))>;
             label = "CMD_SHIFT_D";
         };
+
+        m_sleep_mode: m_sleep_mode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(C_POWER))>;
+            label = "M_SLEEP_MODE";
+        };
     };
 
     keymap {
@@ -88,11 +95,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE         &kp F1  &kp F2  &kp F3  &kp F4         &kp F5                          &kp F6         &kp F7        &kp F8        &kp F9        &kp F10          &kp F11
-&kp C_SLEEP_MODE  &none   &none   &none   &kp BACKSPACE  &kp ENTER                       &kp F2         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS         &kp KP_MULTIPLY
-&trans            &none   &none   &none   &cmd_shift_d   &none                           &kp BACKSPACE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_SUBTRACT  &kp KP_DIVIDE
-&sys_reset        &none   &none   &none   &none          &cmd_shift_k  &trans    &trans  &none          &kp N7        &kp N8        &kp N9        &kp N0           &trans
-                          &trans  &trans  &trans         &trans        &trans    &trans  &trans         &trans        &trans        &trans
+&kp GRAVE      &kp F1  &kp F2  &kp F3  &kp F4         &kp F5                          &kp F6         &kp F7        &kp F8        &kp F9        &kp F10          &kp F11
+&m_sleep_mode  &none   &none   &none   &kp BACKSPACE  &kp ENTER                       &kp F2         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS         &kp KP_MULTIPLY
+&trans         &none   &none   &none   &cmd_shift_d   &none                           &kp BACKSPACE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_SUBTRACT  &kp KP_DIVIDE
+&sys_reset     &none   &none   &none   &none          &cmd_shift_k  &trans    &trans  &none          &kp N7        &kp N8        &kp N9        &kp N0           &trans
+                       &trans  &trans  &trans         &trans        &trans    &trans  &trans         &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
