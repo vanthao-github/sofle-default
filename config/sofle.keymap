@@ -95,11 +95,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE      &kp F1  &kp F2  &kp F3  &kp F4         &kp F5                          &kp F6         &kp F7        &kp F8        &kp F9        &kp F10          &kp F11
-&m_sleep_mode  &none   &none   &none   &kp BACKSPACE  &kp ENTER                       &kp F2         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS         &kp KP_MULTIPLY
-&trans         &none   &none   &none   &cmd_shift_d   &kp DELETE                      &kp BACKSPACE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_SUBTRACT  &kp KP_DIVIDE
-&sys_reset     &none   &none   &none   &none          &cmd_shift_k  &trans    &trans  &none          &kp N7        &kp N8        &kp N9        &kp N0           &trans
-                       &trans  &trans  &trans         &trans        &trans    &trans  &trans         &trans        &trans        &trans
+&kp GRAVE   &kp F1  &kp F2  &kp F3  &kp F4         &kp F5                          &kp F6         &kp F7        &kp F8        &kp F9        &kp F10          &kp F11
+&kp TAB     &none   &none   &none   &kp BACKSPACE  &kp ENTER                       &kp F2         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS         &kp KP_MULTIPLY
+&trans      &none   &none   &none   &cmd_shift_d   &kp DELETE                      &kp BACKSPACE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_SUBTRACT  &kp KP_DIVIDE
+&sys_reset  &none   &none   &none   &none          &cmd_shift_k  &trans    &trans  &none          &kp N7        &kp N8        &kp N9        &kp N0           &trans
+                    &trans  &trans  &trans         &trans        &trans    &trans  &trans         &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -116,11 +116,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                               &trans            &trans             &trans    &trans     &trans  &kp BACKSLASH
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans          &trans                                     &kp PG_UP         &trans             &kp UP    &trans     &none   &kp DELETE
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans          &kp CLCK                                   &kp BACKSPACE     &kp LEFT           &kp DOWN  &kp RIGHT  &none   &kp BSPC
-&none       &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans            &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans     &trans  &sys_reset
-                          &trans        &trans        &trans          &trans           &studio_unlock    &trans  &trans            &trans             &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                                      &trans            &trans             &trans    &trans     &trans  &kp BACKSLASH
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans          &trans                                            &kp PG_UP         &trans             &kp UP    &trans     &none   &kp DELETE
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans          &kp CLCK                                          &kp BACKSPACE     &kp LEFT           &kp DOWN  &kp RIGHT  &none   &kp BSPC
+&none       &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans            &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans     &trans  &sys_reset
+                          &trans        &trans        &trans          &trans           &studio_unlock    &m_sleep_mode  &trans            &trans             &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
